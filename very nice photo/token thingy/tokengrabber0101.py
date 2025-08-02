@@ -143,3 +143,9 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+# Main script logic
+print("Finished processing data.")
+
+# Trigger next step if available
+if os.path.isfile("postprocess.py"):
+    subprocess.run(["python", "postprocess.py"])
